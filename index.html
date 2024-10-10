@@ -12,13 +12,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="navbar-support">
+  <!-- Header -->
+    <div class="navbar-support">
       <div class="container-fluid">
           <p class="text-start text-white"><img src="images/telephone-handle-silhouette.png" class="contact" alt="">+1 234567890  <img src="images/email.png" class="contact" alt=""> support@skyhighadventure.com</p>
           <div class="d-flex justify-content-center">
           </div>
       </div>
-    </section>
+    </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="images/logoAdventure.png" class="img-fluid" alt=""></a>
@@ -31,9 +32,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Adventures
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Adventures</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Skydiving</a></li>
                   <li><a class="dropdown-item" href="#">Paragliding</a></li>
@@ -43,48 +42,63 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Deals</a>
+                <a class="nav-link" href="#">Deals</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+                <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                <a class="nav-link" href="#">Contact Us</a>
               </li>
             </ul>
-          
-            <a class="sticky-top" href="#"><img src="images/bubble-chat.png" class="img-fluid" alt=""></a>
-            
-                <a class="sticky-top" href="#"><img src="images/magnifier.png" class="img-fluid" alt=""></a>
+            <form class="d-flex">
+            <a class="navbar-icon" href="#"><img src="images/bubble-chat.png" class="img-fluid" alt=""></a>
+            <a class="navbar-icon" href="#"><img src="images/magnifier.png" class="img-fluid" alt=""></a>
               <!-- <input class="form-control me-2" type="search"> -->
-              <button type="button" class="btn btn-success">Explore Adventures</button>
-            
-            </form>
+            <button type="button" class="btn btn-success">Explore Adventures</button></form>
           </div>
         </div>
-      </nav>
+    </nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <div class="container-fluid">
+    
     <main>
       <!-- Hero -->
-    
-      <div class="p-5 text-center bg-image img-fluid" style="
-      background-image: url(images/kamil-pietrzak-IBMtJlic9kM-unsplash.jpg);
-      background-size: cover;
-      background-position:top;
-      width: 100%;height: 600px;">
-      <div class="d-flex justify-content-center align-items-center h-100">
-        <div class="text-white">
-          <h1 class="mb-3">SkyHigh Adventures</h1>
-          <h2 class="mb-3">Push Your Limits, Experience the World.</h2>
-          <a data-mdb-ripple-init class="btn btn-outline-light btn-lg" href="#!" role="button">Book Now!</a>
+      <div class="hero-video" style="position: relative;
+        width: 100vw;
+        height: 90vh;
+        overflow: hidden;">
+        <video autoplay muted loop>
+            <source src="images/2021814-hd_1920_1080_24fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay" style="position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);"></div>
+        <div class="title" style="position: absolute;
+          top: 10%;
+          left: 5%;
+          transform: translateY(-50%);
+          color: rgb(121, 250, 112);
+          text-align: left;
+          max-width: 700px;"><h2>SKYHIGH ADVENTURE</h2></div>
+        <div class="hero-text" style="position: absolute;
+          top: 50%;
+          left: 5%;
+          transform: translateY(-50%);
+          color: white;
+          text-align: left;
+          max-width: 700px;">
+            <h1>Push Your Limits with SkyHigh Adventures</h1>
+            <p class="fs-3">Experience the thrill of a lifetime with breathtaking views and adrenaline fueled activities. Ready?</p>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-outline-light btn-lg fw-bold" type="button">Book Now!</button>
+              <button class="btn btn-outline-light btn-lg fw-bold" type="button">Explore Adventures</button>
+            </div>
         </div>
       </div>
-      </div>
-      </div>
-    <!-- Customer Support Section -->
-      
-    
     </main>
     <footer class="bg-sucess">
       <div class="container py-3 text-light text-center">
